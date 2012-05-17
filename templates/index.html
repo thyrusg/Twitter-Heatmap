@@ -6,7 +6,7 @@
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCcByKyHtKrVFsAXrzfRwBCQm5zd9uvjvA&sensor=true">
 	</script>
 	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
-	<!-- Add link to Google Maps API -->
+	
 </head>
 <body>
 
@@ -27,3 +27,9 @@
 	<div id="info">
 		Twitter location heatmap made using Flask and heatmap.js
 	</div>
+
+	<!-- Import heatmap.js & heatmap-gmaps.js -->
+	<script type="text/javascript" src="../static/heatmap.js"></script>
+	<script type="text/javascript" src="../static/heatmap-gmaps.js"></script>
+
+</body>
