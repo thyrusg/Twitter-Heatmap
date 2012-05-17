@@ -1,0 +1,29 @@
+<!doctype html>
+<head>
+	<title>Where You Tweet @ ?</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Load the Google maps api -->
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCcByKyHtKrVFsAXrzfRwBCQm5zd9uvjvA&sensor=true">
+	</script>
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+	<!-- Add link to Google Maps API -->
+</head>
+<body>
+
+	<div id="main">
+		Where You Tweet @ ?
+	</div>
+
+	<div id="search-box">
+		<form>
+			<label>Twitter Name</label>
+			<input type = "text" required autofocus placeholder="e.g. thyrusgorges">
+		</form>
+	</div>
+
+	<div id="twitter-heatmap">
+	</div>
+
+	<div id="info">
+		Twitter location heatmap made using Flask and heatmap.js
+	</div>
